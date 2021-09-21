@@ -11,15 +11,15 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="hs-text">
-								<h2><span>Music</span> for everyone.</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
-								<a href="#" class="site-btn">Download Now</a>
-								<a href="#" class="site-btn sb-c2">Start free trial</a>
+								<h2><span>{{dishes1.name}}</span>!</h2>
+								<p>Our plate, {{dishes1.description}} for {{dishes1.price}}!</p>
+								<a href="{{ path('menu') }}" class="site-btn">Menu</a>
+								<a href="#" class="site-btn sb-c2">Order</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="hr-img">
-								<img src="{{ asset('img/hero-bg.png') }}" alt="">
+								<img src="{{ asset('images/' ~ dishes1.image)}}">
 							</div>
 						</div>
 					</div>
@@ -30,15 +30,15 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="hs-text">
-								<h2><span>Listen </span> to new music.</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
-								<a href="#" class="site-btn">Download Now</a>
-								<a href="#" class="site-btn sb-c2">Start free trial</a>
+								<h2><span>{{dishes2.name}}</span>!</h2>
+								<p>Our plate, {{dishes2.description}} for {{dishes2.price}}!</p>
+								<a href="{{ path('menu') }}" class="site-btn">Menu</a>
+								<a href="#" class="site-btn sb-c2">Order</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="hr-img">
-								<img src="{{ asset('img/hero-bg.png') }}" alt="">
+								<img src="{{ asset('images/' ~ dishes2.image)}}">
 							</div>
 						</div>
 					</div>
